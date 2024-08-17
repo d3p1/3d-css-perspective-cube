@@ -1,0 +1,28 @@
+{
+  "name": "@d3p1/3d-css-perspective-cube",
+  "version": "0.0.0",
+  "description": "A perspective cube to improve my CSS skills",
+  "author": "C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)",
+  "homepage": "https://github.com/d3p1/3d-css-perspective-cube#readme",
+  "bugs": {
+    "url": "https://github.com/d3p1/3d-css-perspective-cube/issues"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d3p1/3d-css-perspective-cube.git"
+  },
+  "keywords": [
+    "css",
+    "3d-css"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@d3p1/commitlint-config": "^1.0.1",
+    "husky": "^9.1.4"
+  }
+}
