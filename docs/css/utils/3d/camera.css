@@ -1,0 +1,17 @@
+/**
+ * @description Camera styles
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
+ * @todo        Analyze if there is a way to include the camera to the scene, instead of being an independent element
+ */
+.camera-panel {
+    width : 50%;
+    height: 50vh;
+}
+
+.camera-panel--top-left, .camera-panel--bottom-left {
+    float: left;
+}
+
+.camera-panel--top-right, .camera-panel--bottom-right {
+    float: right;
+}

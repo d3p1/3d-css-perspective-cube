@@ -1,0 +1,14 @@
+/**
+ * @description Theme styles
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
+ */
+:root {
+    --primary-color   : #f2eff8;
+    --background-color: #333;
+}
+
+body {
+    color           : var(--primary-color);
+    background-color: var(--background-color);
+    margin          : 0;
+}

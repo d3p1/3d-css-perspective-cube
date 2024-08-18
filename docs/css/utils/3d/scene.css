@@ -1,0 +1,19 @@
+/**
+ * @description Scene styles
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
+ */
+.scene, .scene div {
+    position       : absolute;
+    transform-style: preserve-3d;
+}
+
+.scene {
+    --scene-rotation-x: 65deg;
+    --scene-rotation-z: 45deg;
+}
+
+.scene {
+    top       : 50%;
+    left      : 50%;
+    transform : rotateX(var(--scene-rotation-x)) rotateZ(var(--scene-rotation-z));
+}

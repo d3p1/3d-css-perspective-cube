@@ -1,0 +1,23 @@
+/**
+ * @description Perspective styles
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
+ */
+.scene {
+    transition: transform 1s;
+}
+
+.camera-panel--top-left:hover ~ .scene, .camera-panel--top-right:hover ~ .scene {
+    --scene-rotation-x: 30deg;
+}
+
+.camera-panel--top-left:hover ~ .scene, .camera-panel--bottom-left:hover ~ .scene {
+    --scene-rotation-z: 15deg;
+}
+
+.camera-panel--bottom-left:hover ~ .scene, .camera-panel--bottom-right:hover ~ .scene {
+    --scene-rotation-x: 100deg;
+}
+
+.camera-panel--top-right:hover ~ .scene, .camera-panel--bottom-right:hover ~ .scene {
+    --scene-rotation-z: 80deg;
+}

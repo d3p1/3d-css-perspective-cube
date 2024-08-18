@@ -1,0 +1,50 @@
+/**
+ * @description Cube styles
+ * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
+ */
+.scene__cube {
+    --cube-color: #f2eff8;
+}
+
+.scene__cube {
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    width    : 200px;
+    height   : 200px;
+}
+
+.scene__cube-side {
+    width           : 200px;
+    height          : 200px;
+    background-color: var(--cube-color);
+}
+
+.scene__cube-side--longitudinal {
+    transform       : rotateY(-90deg);
+    transform-origin: left center;
+}
+
+.scene__cube-side--longitudinal-back {
+    background-color: color-mix(in display-p3, var(--cube-color) 50%, var(--background-color));
+}
+
+.scene__cube-side--longitudinal-front {
+    transform       : translateX(200px) rotateY(-90deg);
+    background-color: color-mix(in display-p3, var(--cube-color) 80%, var(--background-color));
+}
+
+.scene__cube-side--lateral {
+    transform       : rotateX(90deg);
+    transform-origin: top center;
+}
+
+.scene__cube-side--lateral-left {
+    transform       : translateY(200px) rotateX(90deg);
+    background-color: color-mix(in display-p3, var(--cube-color) 90%, var(--background-color));
+}
+
+.scene__cube-side--vertical-top {
+    transform       : translateZ(200px);
+    background-color: color-mix(in display-p3, var(--cube-color) 70%, var(--background-color));
+}
