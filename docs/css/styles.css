@@ -35,6 +35,16 @@ body {
     transform: translate(-50%, -50%);
     width    : 200px;
     height   : 200px;
+    animation: rotating 3s normal linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateZ(360deg);
+    }
 }
 
 .scene__cube-side {
