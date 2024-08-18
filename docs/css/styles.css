@@ -20,9 +20,44 @@ body {
 }
 
 .scene {
-    top      : 50%;
-    left     : 50%;
-    transform: rotateX(65deg) rotateZ(45deg);
+    --scene-rotation-x: 65deg;
+    --scene-rotation-z: 45deg;
+}
+
+.scene {
+    top       : 50%;
+    left      : 50%;
+    transform : rotateX(var(--scene-rotation-x)) rotateZ(var(--scene-rotation-z));
+    transition: transform 1s;
+}
+
+.camera-panel {
+    width : 50%;
+    height: 50vh;
+}
+
+.camera-panel--top-left, .camera-panel--bottom-left {
+    float: left;
+}
+
+.camera-panel--top-right, .camera-panel--bottom-right {
+    float: right;
+}
+
+.camera-panel--top-left:hover ~ .scene, .camera-panel--top-right:hover ~ .scene {
+    --scene-rotation-x: 30deg;
+}
+
+.camera-panel--top-left:hover ~ .scene, .camera-panel--bottom-left:hover ~ .scene {
+    --scene-rotation-z: 15deg;
+}
+
+.camera-panel--bottom-left:hover ~ .scene, .camera-panel--bottom-right:hover ~ .scene {
+    --scene-rotation-x: 100deg;
+}
+
+.camera-panel--top-right:hover ~ .scene, .camera-panel--bottom-right:hover ~ .scene {
+    --scene-rotation-z: 80deg;
 }
 
 .scene__cube {
@@ -35,16 +70,6 @@ body {
     transform: translate(-50%, -50%);
     width    : 200px;
     height   : 200px;
-    animation: rotating 3s normal linear infinite;
-}
-
-@keyframes rotating {
-    from {
-        transform: rotateX(0deg) rotateZ(0deg);
-    }
-    to {
-        transform: rotateX(360deg) rotateZ(360deg);
-    }
 }
 
 .scene__cube-side {
