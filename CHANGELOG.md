@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/d3p1/3d-css-perspective-cube/compare/v1.0.0...v1.1.0) (2024-08-18)
+
+
+### Features
+
+* add perspective effect to cube [[#1](https://github.com/d3p1/3d-css-perspective-cube/issues/1)] ([7e1fe53](https://github.com/d3p1/3d-css-perspective-cube/commit/7e1fe5308dee044ec1de68c6eecdeb0b469eaaae))
+* playing with rotation animations [[#1](https://github.com/d3p1/3d-css-perspective-cube/issues/1)] ([5fa20e5](https://github.com/d3p1/3d-css-perspective-cube/commit/5fa20e5688759beba872d1b06dda1db695ec92c8))
+
 # 1.0.0 (2024-08-17)
 
 
